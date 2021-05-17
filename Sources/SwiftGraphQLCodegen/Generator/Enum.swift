@@ -22,7 +22,7 @@ extension EnumType {
     }
 
     private var docs: String {
-        "/// \(description ?? name)"
+        "/* \(description ?? name) */"
     }
 
     /// Represents possible enum cases.
