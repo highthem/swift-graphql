@@ -39,7 +39,7 @@ extension Collection where Element == ObjectTypeRef {
     }
 
     private var mock: String {
-        first!.namedType.name.camelCase
+        first?.namedType.name.camelCase ?? "Any"
     }
 }
 
