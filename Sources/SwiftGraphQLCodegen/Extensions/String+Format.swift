@@ -7,7 +7,7 @@ extension String {
         let trimmed = trimmingCharacters(
             in: CharacterSet.newlines.union(.whitespaces)
         )
-        let formatted = try SwiftFormat.format(trimmed)
-        return formatted
+        //let formatted = try SwiftFormat.format(trimmed)
+        return trimmed
     }
 }
