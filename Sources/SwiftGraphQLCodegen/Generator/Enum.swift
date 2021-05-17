@@ -44,7 +44,7 @@ extension EnumValue {
     }
 
     private var docs: String {
-        description.map { "/// \($0)" } ?? ""
+        description.map { "/* \($0) */" } ?? ""
     }
 
     private var availability: String {
